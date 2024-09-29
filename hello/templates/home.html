@@ -1,0 +1,509 @@
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/awaiskhan2.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">AwaisKhan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
+          </button>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serices.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sorcecode.html">SourceCode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gear.html">My Gear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <i class="fa fa-sun-o" id="icon"></i>
+                    <!-- <div class="text-end">
+                        <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                        <a href="login.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+                    </div> -->
+                    <div class="text-end">
+                        {% if user.is_authenticated %}
+                        <a href="logout.html"><button type="button" class="btn btn-warning">Logout</button></a> {% else %}
+                        <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                        <a href="signin.html"><button type="button" class="btn btn-warning">Sign-up</button></a> {% endif %}
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <div id="home4-page" class="fixed-top">
+        <div class="home6-page">
+            <i class="	fa fa-home"></i>
+        </div>
+        <div class="home7-page">
+            <ul id="nav">
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JS</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="c.html">C</a></li>
+                <li><a href="clangu.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="react.html">React JS</a></li>
+                <a id="close"><i class="fa fa-refresh"></i></a>
+
+            </ul>
+        </div>
+        <div class="home8-page">
+            <form class="d-flex" role="search">
+                <i id="bare" class="fa fa-sliders"></i>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="home-page">
+        <div class="home1-page">
+            <h1>Wellcome to MuhammadAwaisKhan</h1>
+            <h3>About Me</h3>
+            <h4>A Website for Learn<span id="awaiskhan"> AwaisKhan Full Stack Developer</span>
+            </h4>
+
+
+            <div class="home2-page">
+                <i href="https://www.linkedin.com/in/muhammad-awais-b9a938293/" class="fa fa-linkedin ali5"></i>
+                <i href="https://www.facebook.com/profile.php?id=100095159826925" class="fa fa-facebook ali"></i>
+                <i href="https://twitter.com/MuhammadQa16564" class="fa fa-twitter ali1"></i>
+                <i href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html" class="fa fa-google ali2"></i>
+                <i href="https://www.instagram.com/thapatechnical/" class="	fa fa-instagram ali3"></i>
+                <i href="https://www.pinterest.com/" class="fa fa-pinterest-p ali4"></i>
+            </div>
+            <div class="home3-page">
+                <a href="serices.html"><button class="ali6">Free Courses</button></a>
+                <a href="contact.html"><button class="ali7">Contact Us</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="home9-page" class="section-p4">
+        <h1>Recommended Courses</h1>
+        <div class="home10-page">
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/1.jpg">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>Python Tutorials - 100 Days of Code</h2>
+                    <h4>Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!</h4>
+                    <a href="https://www.youtube.com/watch?v=7wnove7K-ZQ&list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/2.jpg">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>Python Tutorials - 100 Days of Code</h2>
+                    <h4>Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!</h4>
+                    <a href="https://www.youtube.com/watch?v=ER9SspLe4Hg&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/11.png">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>Python Tutorials - 100 Days of Code</h2>
+                    <h4>Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. Let's commit our 100 days of code to python!</h4>
+                    <a href="https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/3.jpg">
+                </div>
+                <div class="home13-page">
+                    <h5>FREE Course</h5>
+                    <h2>FREE Making BLOG WordPress 2024!</h2>
+                    <h4>How to Start a FREE Money Making BLOG with Chat GPT & WordPress 2024!</h4>
+                    <a href="https://www.youtube.com/watch?v=KBt88Wx8Cbg&pp=ygUNbmF5eWFyIHNoYWlraA%3D%3D"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/4.jpg">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>School Management System Website 2023</h2>
+                    <h4>How to Make School Management System Website in WordPress 2023</h4>
+                    <a href="https://www.youtube.com/watch?v=WLbHk0KEXcE"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/5.jpg">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>E-commerce Website & MOBILE APP </h2>
+                    <h4>How to Create an eCommerce Website & MOBILE APP with WordPress & WoodMart</h4>
+                    <a href="https://www.youtube.com/watch?v=QZlIS6tquRM&pp=ygUNbmF5eWFyIHNoYWlraA%3D%3D"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/1201.webp">
+                </div>
+                <div class="home13-page">
+                    <h5>FREE Course</h5>
+                    <h2>Create Responsive Website html Css and JS</h2>
+                    <h4>Create Responsive Website using HTML, CSS & JavaScript in Hindi🔥 to Complete JavaScript Tutorial for Beginners in Hindi in 2023to Complete JavaScript Tutorial for Beginners.</h4>
+                    <a href="https://www.youtube.com/watch?v=oMXdbUN6h-Q&t=54s&pp=ygUNdGhhcGF0ZWNuaWNhbA%3D%3D"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/1204.webp">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>CSS Complete Tutorial in Hindi For Beginners</h2>
+                    <h4>Welcome to our World Best Complete CSS Course Tutorial for Beginners in Hindi, where you'll master Basic to Advanced CSS and the art of styling websites using CSS.</h4>
+                    <a href="https://www.youtube.com/watch?v=oMXdbUN6h-Q&t=54s"><button>Start Watching</button></a>
+                </div>
+            </div>
+            <div class="home11-page">
+                <div class="home12-page">
+                    <img src="/static/images/1206.webp">
+                </div>
+                <div class="home13-page">
+                    <h5>Free Course</h5>
+                    <h2>Complete JavaScript Tutorial in Hindi in 2023</h2>
+                    <h4>Welcome, to Complete JavaScript Tutorial for Beginners in Hindi in 2023. We will cover Basic to Advanced JavaScript, Modern JavaScript, and OOPS in JavaScript in Hindi.</h4>
+                    <a href="https://www.youtube.com/watch?v=KGkiIBTq0y0&t=11s"><button>Start Watching</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="home14-page" class="section-p4">
+        <h1>Testimonials</h1>
+        <div class="home15-page">
+            <div class="home16-page">
+                <i class="	fa fa-quote-right"></i>
+                <h4>I don't have words to thank this man, I'm really grateful to have this channel and website in my daily routine. If you're a mere beginner, then you can trust this guy and can put your time into his content. I can assure you that it'll
+                    be worth it.</h4>
+                <h2>Mohit Kumar</h2>
+                <h6>Web Developer</h6>
+            </div>
+            <div class="home17-page">
+                <i class="	fa fa-quote-right"></i>
+                <h4>For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel is for you! Both basic and advanced stacks are covered on this channel, and one can learn according to his skill levels. And the icing on the cake
+                    is, everything is available for free.</h4>
+                <h2>Rakesh Shetty</h2>
+                <h6>Web Developer</h6>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="home18-page" class="section-p4">
+        <h1>Top 4 | Best WordPress Hosting</h1>
+        <div class="home19-page">
+            <div class="home20-page">
+                <div class="home23-page">
+                    <img src="/static/images/1203.png">
+                </div>
+                <div class="home24-page">
+                    <h2>Best WordPress Hosting</h2>
+                    <h3>Hostinger</h1>
+                        <h4>Hostinger is Undoubtedly THE BEST & Most Affordable WordPress Hosting Provider!</h4>
+                        <a href="https://www.hostinger.com/?ppc_campaign=google_search_generic_c&bidkw=godaddy%20hosting&lo=9075147&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D5-EXefIIui18HQDMmQGI_Ebv-pWd5k3AY9leFOGkagsPkVcbwgAGzgaAnrCEALw_wcB"><button>Get Discount</button></a>
+                </div>
+            </div>
+            <div class="home20-page">
+                <div class="home23-page">
+                    <img src="/static/images/1204.png">
+                </div>
+                <div class="home24-page">
+                    <h2>Best WordPress Hosting</h2>
+                    <h3>BlueHost
+                    </h3>
+                    <h4>It is one of the Best Value Hosting Provider with Premium features & Performance.</h4>
+                    <a href="https://www.bluehost.com/"><button>Get Discount</button></a>
+                </div>
+            </div>
+            <div class="home20-page">
+                <div class="home23-page">
+                    <img src="/static/images/1205.png">
+                </div>
+                <div class="home24-page">
+                    <h2>Best WordPress Hosting</h2>
+                    <h3>SiteGround
+                    </h3>
+                    <h4>It is one of the Most Reliable and famous Hosting Providers, with Best Support.</h4>
+                    <a href="https://world.siteground.com/"><button>Get Discount</button></a>
+                </div>
+            </div>
+            <div class="home20-page">
+                <div class="home23-page">
+                    <img src="/static/images/1206.png">
+                </div>
+                <div class="home24-page">
+                    <h2>Best WordPress Hosting</h2>
+                    <h3>A2 Hosting</h3>
+                    <h4>A2 Hosting is a fast web hosting solution for WordPress Websites. A2 Hosting Provide Great Security .
+                    </h4>
+                    <a href="https://www.a2hosting.com/?aid=653a4edb10f92&cid=edae5de3&01hdrxvdvgxtv5w2prfgdtr0gt"><button>Get Discount</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="home26-page" class="section-p4">
+        <div class="home28-page">
+            <h1>Subscbribe Up For Newvideos</h1>
+            <h5>Get E_mail updates about our latest youtube and <span>special offer</span>.</h5>
+        </div>
+        <form class="home29-page" method="POST" action="home.html">
+            {% csrf_token %}
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <div id="home30-page">
+        <div class="home31-page">
+            <div class="home32-page">
+                <h1>AwaisKhan</h1>
+                <h2>Contact</h2>
+                <p>Address: <span>Usma Masjid Jameel Colony Kabirwala</span></p>
+                <p>Phone: <span> 0322-6550052 & +923065874752</span></p>
+                <p>Hours: <span>8:00AM to 10PM Monday to Sunday</span></p>
+
+                <div class="home33-page">
+                    <h2>Follow Us : </h2>
+                    <div class="home36-page">
+                        <i class="	fa fa-facebook"></i>
+                        <i class="		fa fa-google"></i>
+                        <i class="	fa fa-twitter"></i>
+                        <i class="		fa fa-instagram"></i>
+                        <i class="	fa fa-youtube-play"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="home34-page">
+                <h1>About</h1>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>SourceCode</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>My Gear</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Login</a></li>
+                    <li><a>Sign In</a></li>
+
+                </ul>
+            </div>
+            <div class="home35-page">
+                <h1>Languages</h1>
+                <ul>
+                    <li><a>HTML</a></li>
+                    <li><a>CSS</a></li>
+                    <li><a>JavaScript</a></li>
+                    <li><a>Python</a></li>
+                    <li><a>Django</a></li>
+                    <li><a>React</a></li>
+                    <li><a>Bootstrap</a></li>
+                    <li><a>C++</a></li>
+                    <li><a>Java</a></li>
+                </ul>
+            </div>
+            <div class="home38-page">
+                <h1>Install App</h1>
+                <h3>Form My store Or Google Play</h3>
+                <div class="home37-page">
+                    <img src="/static/images/n29.png">
+                    <img src="/static/images/n300.png">
+                </div>
+            </div>
+        </div>
+        <div class="home40-page">
+            <h5>@ 2023 ,MuhammadAwaisKhan - Full Stack Develpor</h5>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+    <script>
+        let icons = document.getElementById('icon');
+        icons.onclick = function() {
+                document.body.classList.toggle('dark-them');
+                if (document.body.classList.contains('dark-them')) {
+                    icons.class = "fa fa-sun-o";
+                } else {
+                    icon.class = "fa fa-moon-o";
+                }
+            }
+            //
+    </script>
+    <script>
+        let spantag = document.getElementById('awaiskhan');
+        let isvisible = true
+
+        function hidetext() {
+            if (isvisible) {
+                spantag.style.display = "none";
+            } else {
+                spantag.style.display = "inline";
+            }
+            isvisible = !isvisible
+        }
+
+
+        hidetext();
+
+        setInterval(hidetext, Math.random() * 1000 + 1000);
+    </script>
+
+    <script>
+        let nac = document.getElementById("nav");
+        let clos = document.getElementById("close");
+        let bar = document.getElementById("bare");
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nac.classList.add('active')
+            });
+        }
+        if (clos) {
+            clos.addEventListener('click', () => {
+                nac.classList.remove('active')
+            });
+        }
+    </script>
+
+</body>
+
+</html>

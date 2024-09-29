@@ -1,0 +1,133 @@
+from django.contrib import admin
+from django.urls import path,include
+from home import views
+urlpatterns = [
+    path('' , views.home , name = 'home.html'),
+    path('home.html' , views.home , name = 'home.html'),
+    path('about.html' , views.about , name = 'about.html'),
+    path('contact.html' , views.contact , name = 'contact.html'),
+    path('gear.html' , views.gear , name = 'gear.html'),
+    path('login.html' , views.loginuser , name = 'login.html'),
+    path('signin.html' , views.signin , name = 'signin.html'),
+    path('logout.html' , views.logoutuser , name = 'logout.html'),
+    path('serices.html' , views.serices , name = 'serices.html'),
+    path('sorcecode.html' , views.sorcecode , name = 'sorcecode.html'),
+    path('thanku.html' , views.thanku , name = 'thanku.html'),
+    path('html.html' , views.html , name = 'html.html'),
+    path('css.html' , views.css , name = 'css.html'),
+    path('c.html' , views.c , name = 'c.html'),
+    path('clangu.html' , views.clangu , name = 'clangu.html'),
+    path('python.html' , views.python , name = 'python.html'),
+    path('js.html' , views.js , name = 'js.html'),
+    path('react.html' , views.react , name = 'react.html'),
+    path('java.html' , views.java , name = 'java.html'),
+    path('htmlworking.html' , views.htmlworking , name = 'htmlworking.html'),
+    path('htmlinstall.html' , views.htmlinstall , name = 'htmlinstall.html'),
+    path('htmlexecution.html' , views.htmlexecution , name = 'htmlexecution.html'),
+    path('htmltags.html' , views.htmltags , name = 'htmltags.html'),
+    path('htmlelement.html' , views.htmlelement , name = 'htmlelement.html'),
+    path('htmlatri.html' , views.htmlatri , name = 'htmlatri.html'),
+    path('htmlcomet.html' , views.htmlcomet , name = 'htmlcomet.html'),
+    path('htmlid.html' , views.htmlid , name = 'htmlid.html'),
+    path('skelten.html' , views.skelten , name = 'skelten.html'),
+    path('heading.html' , views.heading , name = 'heading.html'),
+    path('para.html' , views.para , name = 'para.html'),
+    path('horizatal.html' , views.horizatal , name = 'horizatal.html'),
+    path('line.html' , views.line , name = 'line.html'),
+    path('anchor.html' , views.anchor , name = 'anchor.html'),
+    path('img.html' , views.img , name = 'img.html'),
+    path('pre.html' , views.pre , name = 'pre.html'),
+    path('htmlinline.html' , views.htmlinline , name = 'htmlinline.html'),
+    path('htmllock.html' , views.htmllock , name = 'htmllock.html'),
+    path('htmllist.html' , views.htmllist , name = 'htmllist.html'),
+    path('htmlorderlist.html' , views.htmlorderlist , name = 'htmlorderlist.html'),
+    path('htmlunorder.html' , views.htmlunorder , name = 'htmlunorder.html'),
+    path('htmldefina.html' , views.htmldefina , name = 'htmldefina.html'),
+    path('htmltale.html' , views.htmltale , name = 'htmltale.html'),
+    path('htmlmoretale.html' , views.htmlmoretale , name = 'htmlmoretale.html'),
+    path('htmlform.html' , views.htmlform , name = 'htmlform.html'),
+    path('htmlinput.html' , views.htmlinput , name = 'htmlinput.html'),
+    path('htmltextarea.html' , views.htmltextarea , name = 'htmltextarea.html'),
+    path('htmlmoreform.html' , views.htmlmoreform , name = 'htmlmoreform.html'),
+    path('htmlmatatag.html' , views.htmlmatatag , name = 'htmlmatatag.html'),
+    path('htmllink.html' , views.htmllink , name = 'htmllink.html'),
+    path('htmlvedio.html' , views.htmlvedio , name = 'htmlvedio.html'),
+    path('htmlsvg.html' , views.htmlsvg , name = 'htmlsvg.html'),
+    path('htmliframs.html' , views.htmliframs , name = 'htmliframs.html'),
+    path('htmlcodetag.html' , views.htmlcodetag , name = 'htmlcodetag.html'),
+    path('htmlsementic.html' , views.htmlsementic , name = 'htmlsementic.html'),
+    path('htmlcanvas.html' , views.htmlcanvas , name = 'htmlcanvas.html'),
+    path('htmlgloal.html' , views.htmlgloal , name = 'htmlgloal.html'),
+    path('htmlentites.html' , views.htmlentites , name = 'htmlentites.html'),
+    path('htmlquotation.html' , views.htmlquotation , name = 'htmlquotation.html'),
+    path('htmlta.html' , views.htmlta , name = 'htmlta.html'),
+
+    path('cssfirst.html' , views.cssfirst , name = 'cssfirst.html'),
+    path('csswork.html' , views.csswork , name = 'csswork.html'),
+    path('csssyntex.html' , views.csssyntex , name = 'csssyntex.html'),
+    path('cssways.html' , views.cssways , name = 'cssways.html'),
+    path('cssselector.html' , views.cssselector , name = 'cssselector.html'),
+    path('csscoments.html' , views.csscoments , name = 'csscoments.html'),
+    path('cssspecific.html' , views.cssspecific , name = 'cssspecific.html'),
+    
+    path('csscolor.html' , views.csscolor, name = 'csscolor.html'),
+    path('cssbgcolor.html' , views.cssbgcolor , name = 'cssbgcolor.html'),
+    path('cssborder.html' , views.cssborder , name = 'cssborder.html'),
+    path('cssimages.html' , views.cssimages , name = 'cssimages.html'),
+    path('cssvideo.html' , views.cssvideo , name = 'cssvideo.html'),
+    path('cssfonts.html' , views.cssfonts , name = 'cssfonts.html'),
+    path('csstext.html' , views.csstext , name = 'csstext.html'),
+    path('cssboxmod.html' , views.cssboxmod , name = 'cssboxmod.html'),
+    path('csspadinbg.html' , views.csspadinbg , name = 'csspadinbg.html'),
+    path('cssmargin.html' , views.cssmargin , name = 'cssmargin.html'),
+    path('csshover.html' , views.csshover , name = 'csshover.html'),
+    path('csscurser.html' , views.csscurser , name = 'csscurser.html'),
+    path('csslist.html' , views.csslist , name = 'csslist.html'),
+    path('cssblink.html' , views.cssblink , name = 'cssblink.html'),
+    path('csscombina.html' , views.csscombina , name = 'csscombina.html'),
+    path('csspesudo.html' , views.csspesudo , name = 'csspesudo.html'),
+    path('cssbutbtbon.html' , views.cssbutbtbon , name = 'cssbutbtbon.html'),
+    path('cssoverfloaw.html' , views.cssoverfloaw , name = 'cssoverfloaw.html'),
+    path('cssfloat.html' , views.cssfloat , name = 'cssfloat.html'),
+    path('cssimportant.html' , views.cssimportant , name = 'cssimportant.html'),
+    path('cssmathfunction.html' , views.cssmathfunction , name = 'cssmathfunction.html'),
+    path('csssize.html' , views.csssize , name = 'csssize.html'),
+    path('csszindex.html' , views.csszindex , name = 'csszindex.html'),
+    path('csspbositing.html' , views.csspbositing , name = 'csspbositing.html'),
+    path('cssform.html' , views.cssform , name = 'cssform.html'),
+    path('cssnav.html' , views.cssnav , name = 'cssnav.html'),
+
+    path('cssdisp.html' , views.cssdisp , name = 'cssdisp.html'),
+    path('cssflex.html' , views.cssflex , name = 'cssflex.html'),
+    path('cssgrid.html' , views.cssgrid , name = 'cssgrid.html'),
+    path('cssmedia.html' , views.cssmedia , name = 'cssmedia.html'),
+    path('cssdtran.html' , views.cssdtran , name = 'cssdtran.html'),
+    path('csstran.html' , views.csstran  , name = 'csstran.html'),
+    path('cssorderim.html' , views.cssorderim , name = 'cssorderim.html'),
+    path('cssgrandan.html' , views.cssgrandan , name = 'cssgrandan.html'),
+    path('cssinherit.html' , views.cssinherit , name = 'cssinherit.html'),
+    path('cssshadow.html' , views.cssshadow , name = 'cssshadow.html'),
+    path('csstool.html' , views.csstool , name = 'csstool.html'),
+    path('cssmasking.html' , views.cssmasking , name = 'cssmasking.html'),
+    path('csspaginat.html' , views.csspaginat , name = 'csspaginat.html'),
+    path('cssmediaqu.html' , views.cssmediaqu , name = 'cssmediaqu.html'),
+    path('cssanimation.html' , views.cssanimation , name = 'cssanimation.html'),
+    path('question.html' , views.question , name = 'question.html'),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

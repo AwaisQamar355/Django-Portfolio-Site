@@ -1,0 +1,583 @@
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/awaiskhan19.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+    video {
+        padding-bottom: -160px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">AwaisKhan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
+          </button>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serices.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sorcecode.html">SourceCode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gear.html">My Gear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <i class="fa fa-sun-o" id="icon"></i>
+                    <div class="text-end">
+                        {% if user.is_authenticated %}
+                        <a href="logout.html"><button type="button" class="btn btn-warning">Logout</button></a> {% else %}
+                        <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                        <a href="signin.html"><button type="button" class="btn btn-warning">Sign-up</button></a> {% endif %}
+                    </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="home4-page" class="fixed-top">
+        <div class="home6-page">
+            <i class="	fa fa-home"></i>
+        </div>
+        <div class="home7-page">
+            <ul id="nav">
+                <li><a href="html.html" class="active">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JS</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="c.html">C</a></li>
+                <li><a href="clangu.html">C++</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="react.html">React JS</a></li>
+                <a id="close"><i class="fa fa-refresh"></i></a>
+
+            </ul>
+        </div>
+        <div class="home8-page">
+            <form class="d-flex" role="search">
+                <i id="bare" class="fa fa-sliders"></i>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div id="html-page">
+        <div class="html2-page">
+            <div class="html3-page">
+                <h1>
+                    introduction
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='css.html'">Information & History</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='cssfirst.html'">Your first CSS website</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='csswork.html'">How CSS works?</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='csssyntex.html'">Syntax of CSS</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 class="active" onclick="window.location.href='cssways.html'">Ways to add CSS</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='cssselector.html'">CSS Selectors</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='csscoments.html'">CSS Comments</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='cssspecific.html'">CSS Specificity</h3>
+                    </li>
+
+                </div>
+
+                <h1>
+                    HTML BASIC TAGS
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='skelten.html'">Skeletal Tags</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='heading.html'">Heading Tags</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='para.html'">paragraph Tags</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='horizatal.html'">Horizontal Line Tag</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='line.html'">Line Break Tags</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='anchor.html'">Anchor Tag</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='img.html'">Image Tag</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='pre.html'">Pre Tag</h3>
+                    </li>
+
+                </div>
+
+                <h1>
+                    INLINE & BLOCK ELEMENTS
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlinline.html'">HTML inline Elements</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmllock.html'">HTML BLOCK Elements</h3>
+                    </li>
+                </div>
+
+                <h1>
+                    HTML lIST
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmllist.html'">HTML Lists</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlunorder.html'">HTML Unordered List</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlorderlist.html'">HTML ordere List</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmldefina.html'">HTML Defination Lists </h3>
+                    </li>
+
+
+                </div>
+
+                <h1>
+                    HTML TABLES
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmltale.html'">HTML Tables</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlmoretale.html'">
+                            More on Tables
+                        </h3>
+                    </li>
+                </div>
+
+                <h1>
+                    HTML FORMS
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlform'">Introduction to HTML Forms</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlinput.html'">
+                            HTML Input Types
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmltextarea.html'">
+                            Textarea & Select
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlmoreform.html'">
+                            More on forms
+                        </h3>
+                    </li>
+                </div>
+
+                <h1>
+                    HEAD ELEMENTS
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlmatatag.html'">HTML Meta Tags</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmllink.html'">
+                            Link & Script Tags
+                        </h3>
+                    </li>
+                </div>
+
+                <h1>
+                    HEAD MEDIA
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlvedio.html'">Video & Audio Tags</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlsvg.html'">
+                            SVG in HTML
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmliframs.html'">
+                            IFrams in HTML
+                        </h3>
+                    </li>
+                </div>
+
+                <h1>
+                    Miscellaneous Tags
+                </h1>
+                <div class="html4-page">
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlcodetag.html'">HTML Code Tag</h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlsementic.html'">
+                            HTML Semantic Tags
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlcanvas.html'">
+                            HTML Canvas
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlgloal.html'">
+                            HTML Global Attributes
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlentites.html'">
+                            HTML Entities
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlquotation.html'">
+                            HTML Quotation Tag
+                        </h3>
+                    </li>
+                    <li><i class="fa fa-book"></i>
+                        <h3 onclick="window.location.href='htmlta.html'">
+                            Obsolete HTML Tags
+                        </h3>
+                    </li>
+                </div>
+            </div>
+
+            <div class="html5-page">
+                <div class="html6-page">
+                    <a href="csssyntex.html"><button>Previous</button></a>
+                    <a href="cssselector.html"><button>Next</button></a>
+                </div>
+                <div class="html7-page">
+                    <h1>Ways to add CSS
+                    </h1>
+                    <p>There are three different ways to add CSS to an HTML page, which are:
+
+                    </p>
+                    <li><a href="cssways.html">Inline CSS</a></li>
+                    <li><a href="cssways.html">Internal CSS</a></li>
+                    <li><a href="cssways.html">External CSS</a></li>
+                    <h1>Inline CSS
+                    </h1>
+                    <p>Inline CSS is used to add custom properties to specific elements. The added style will only reflect on that particular element only.</p>
+                    <p>To use inline CSS, Insert the "style" attribute within the HTML element's opening tag. Consider the code snippet:</p>
+                    <img src="/static/images/css/9.PNG">
+                    <img src="bhttps://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/ways-to-add-css/Inline_CSS.png">
+                    <p>Here, the inline style of color: purple is attached to only the h1 tag.
+
+                    </p>
+                    <p>Note: The downside of using inline CSS is, that once the project complexity increases, it will become difficult to manage the styles of each and individual elements.</p>
+                    <h1>Internal CSS
+                    </h1>
+                    <p>Internal CSS is used to apply custom style to the multiple elements on the same page. The style can be used throughout the HTML page.</p>
+                    <p>Internal CSS is defined in a <strong>style block</strong>, which will be inside the <strong> head section.</strong> Consider the code snippet:</p>
+                    <img src="/static/images/css/10.PNG">
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/ways-to-add-css/Internal_CSS.png">
+                    <p>Here, in the style block, selector p will target all p tags and assign them color:red.
+
+                    </p>
+                    <strong>Note: The style block should always be in the head section.</strong>
+                    <h1>External CSS
+                    </h1>
+                    <p>External CSS works similarly to internal CSS but with a twist. Instead of adding the styles within the HTML file, we create a separate file with .css extension. This file will hold all the styling details. Then, we link this file to
+                        the HTML page, giving it the instructions on how to look. </p>
+                    <p>The following video will explain, how to link a CSS file to HTML.
+
+                    </p>
+                    <video controls autoplay muted loop>
+    <source src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/ways-to-add-css/add%20external%20css%20demo.mp4">
+</video>
+                    <p>bThere is a new <strong>link</strong> tag in the head section, and this link tag has rel and href properties. The following points will explain each keyword's meaning: </p>
+                    <li>
+                        <link>: This tag is used to create links between different resources, like stylesheets, fonts, and more. In our case, we are using a link tag to link the CSS file with the HTML file.</li>
+                    <li>rel="stylesheet": rel stands for relationship, this defines the type of relationship between the HTML document and the linked resource. When set to "stylesheet", it specifies that the linked resource is a stylesheet that will be used
+                        to style the HTML content.</li>
+                    <li>href="style.css" : The href attribute stands for "hypertext reference." It specifies the path or URL to the external resource we want to link. In this case, it's the path to the external CSS file called "style.css".</li>
+                    <p>Consider the code snippets:
+
+                    </p>
+                    <img src="/static/images/css/11.PNG">
+                    <p>These code snippets will generate this page:
+
+                    </p>
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/ways-to-add-css/External_CSS.png">
+                    <p>This approach enables to use of the same CSS to multiple HTML files, wherever the same custom style is required. This is helpful when we have to maintain consistency on our web pages and want to use the same CSS styles across multiple
+                        pages.
+                    </p>
+                    <p><strong>Note:</strong> The precedence is Inline CSS > Internal CSS > External CSS. If we define the same property with different property values in three different ways, the element will have the property value of inline CSS. Feel
+                        free to explore the CSS Wikipedia page to gain more insights about CSS working.</p>
+
+
+
+
+
+
+
+
+                </div>
+                <div class="html6-page">
+                    <a href="csssyntex.html"><button>Previous</button></a>
+                    <a href="cssselector.html"><button>Next</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="home30-page">
+        <div class="home31-page">
+            <div class="home32-page">
+                <h1>AwaisKbhan</h1>
+                <h2>Contact</h2>
+                <p>Address: <span>Usma Masjid Jameel Colony Kabirwala</span></p>
+                <p>Phone: <span> 0322-6550052 & +923065874752</span></p>
+                <p>Hours: <span>8:00AM to 10PM Monday to Sunday</span></p>
+
+                <div class="home33-page">
+                    <h2>Follow Us : </h2>
+                    <div class="home36-page">
+                        <i class="	fa fa-facebook"></i>
+                        <i class="		fa fa-google"></i>
+                        <i class="	fa fa-twitter"></i>
+                        <i class="		fa fa-instagram"></i>
+                        <i class="	fa fa-youtube-play"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="home34-page">
+                <h1>About</h1>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>SourceCode</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>My Gear</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Login</a></li>
+                    <li><a>Sign In</a></li>
+
+                </ul>
+            </div>
+            <div class="home35-page">
+                <h1>Languages</h1>
+                <ul>
+                    <li><a>HTML</a></li>
+                    <li><a>CSS</a></li>
+                    <li><a>JavaScript</a></li>
+                    <li><a>Python</a></li>
+                    <li><a>Django</a></li>
+                    <li><a>React</a></li>
+                    <li><a>Bootstrap</a></li>
+                    <li><a>C++</a></li>
+                    <li><a>Java</a></li>
+                </ul>
+            </div>
+            <div class="home38-page">
+                <h1>Install App</h1>
+                <h3>Form My store Or Google Play</h3>
+                <div class="home37-page">
+                    <img src="/static/images/n29.png">
+                    <img src="/static/images/n300.png">
+                </div>
+            </div>
+        </div>
+        <div class="home40-page">
+            <h5>@ 2023 ,MuhammadAwaisKhan - Full Stack Develpor</h5>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+    <script>
+        let icons = document.getElementById('icon');
+        icons.onclick = function() {
+                document.body.classList.toggle('dark-them');
+                if (document.body.classList.contains('dark-them')) {
+                    icons.class = "fa fa-sun-o";
+                } else {
+                    icon.class = "fa fa-moon-o";
+                }
+            }
+            //
+    </script>
+    <script>
+        let spantag = document.getElementById('awaiskhan');
+        let isvisible = true
+
+        function hidetext() {
+            if (isvisible) {
+                spantag.style.display = "none";
+            } else {
+                spantag.style.display = "inline";
+            }
+            isvisible = !isvisible
+        }
+
+
+        hidetext();
+
+        setInterval(hidetext, Math.random() * 1000 + 1000);
+    </script>
+
+    <script>
+        let nac = document.getElementById("nav");
+        let clos = document.getElementById("close");
+        let bar = document.getElementById("bare");
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nac.classList.add('active')
+            });
+        }
+        if (clos) {
+            clos.addEventListener('click', () => {
+                nac.classList.remove('active')
+            });
+        }
+    </script>
+
+</body>
+
+</html>

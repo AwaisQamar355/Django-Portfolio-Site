@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-p1 {
+    padding: 120px 120px;
+}
+
+.section-p2 {
+    padding: 100px 120px;
+}
+
+.section-p1 {
+    padding: 80px 120px;
+}
+
+.section-p1 {
+    padding: 60px 120px;
+}
+
+.section-p1 {
+    padding: 20px 120px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item a {
+    color: white;
+}

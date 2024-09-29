@@ -1,0 +1,249 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section-p1 {
+    padding: 120px 120px;
+}
+
+.section-p2 {
+    padding: 100px 120px;
+}
+
+.section-p1 {
+    padding: 80px 120px;
+}
+
+.section-p1 {
+    padding: 60px 120px;
+}
+
+.section-p1 {
+    padding: 20px 120px;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+}
+
+.dark-them {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar .navbar-nav {
+    padding: 10px 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: cursive;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    padding: 6px 10px;
+}
+
+.navbar .container-fluid .navbar-brand {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Algerian;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link .active {
+    color: rgb(209, 209, 6);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after,
+.navbar .navbar-nav .nav-item .nav-link.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 17%;
+    top: 36px;
+    background-color: rgb(209, 209, 6);
+}
+
+.navbar i {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+#home-page {
+    background-image: url('/static/images/64.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#home-page .home1-page h1 {
+    color: black;
+    font-size: 35px;
+    font-family: Algerian;
+    font-weight: 800;
+}
+
+#home-page .home1-page h3 {
+    color: black;
+    font-size: 30px;
+    font-family: Bell MT;
+    font-weight: 800;
+}
+
+#home-page .home1-page h4 {
+    color: rgb(218, 162, 9);
+    font-size: 30px;
+    font-family: Arial Black;
+    font-weight: 800;
+}
+
+#home-page .home1-page h4 span {
+    color: white;
+    font-size: 30px;
+    font-family: Arial Black;
+    font-weight: 800;
+}
+
+#home-page .home2-page {
+    margin: 20px 0px;
+}
+
+#home-page .home2-page i {
+    margin: 0px 3px;
+}
+
+#home-page .home2-page .ali {
+    color: white;
+    background-color: rgb(85, 76, 143);
+    border: 1px solid white;
+    border-radius: 50pc;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 9px 12px;
+}
+
+#home-page .home2-page .ali1 {
+    color: white;
+    background-color: rgb(29, 166, 212);
+    border: 1px solid white;
+    border-radius: 50pc;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 9px 9px;
+}
+
+#home-page .home2-page .ali2 {
+    color: white;
+    background-color: orangered;
+    border: 1px solid white;
+    border-radius: 50pc;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 9px 9px;
+}
+
+#home-page .home2-page .ali3 {
+    color: white;
+    background-color: palevioletred;
+    border: 1px solid white;
+    border-radius: 50pc;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 9px 9px;
+}
+
+#home-page .home2-page .ali4 {
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 50pc;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 9px 11px;
+}
+
+#home-page .home2-page .ali5 {
+    color: white;
+    background-color: rgb(17, 119, 153);
+    border: 1px solid white;
+    border-radius: 50pc;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 9px 9px;
+}
+
+#home-page .home3-page {
+    margin: 16px 0px;
+}
+
+#home-page .home3-page .ali6 {
+    color: white;
+    background-color: rgb(51, 48, 48);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+#home-page .home3-page .ali6:hover {
+    background-color: rgb(22, 21, 21);
+}
+
+#home-page .home3-page .ali7 {
+    color: rgb(24, 23, 23);
+    background-color: rgb(224, 220, 220);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+#home-page .home3-page .ali7:hover {
+    background-color: rgb(204, 200, 200);
+}
+
+#home4-page {
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
